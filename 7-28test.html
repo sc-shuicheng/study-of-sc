@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.28-test</title>
+    
+    <style>/*top栏样式*/
+        body{
+            background-color: #eee;
+            width: 1440px;
+            margin: 0 auto;
+        }
+        .logo{
+            display: inline-block;
+            margin-left: 20px;
+        }      
+        a{
+            margin: 0 20px;
+            font-size: 16px;
+            color: #9CCEFD;
+            text-decoration:none
+        }
+        .now{
+            margin-left: 0;
+            color: #ffffff;
+        }
+        .top{
+            background: #002A64;
+            width: 1440;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            line-height: 20px;
+            justify-content: space-between;
+        }
+        .top-right{
+            display: flex;
+            align-items: center;
+            position: relative;
+            right: 20px;
+            width: 80%;
+         
+        }
+       #pic{
+            position:absolute;
+            right: 126px;
+        }
+        span{
+            display: inline-block;
+            font-size: 14px;
+            color: azure;
+            width: 40px;
+            position: absolute;
+            right :80px;
+        }
+        .nav{
+            margin-left: 0;
+        }
+        #logo-hangt{
+            position: absolute;
+            right: 0px;
+        }
+    </style>
+    <style>/*左侧栏样式*/
+        .left{
+            background: #ffffff;
+            width: 270px;
+            height: 600px;
+            margin-top: 10px;
+            box-shadow: 5px ,5px, 10px, rgb(15, 25, 155);
+            border: #eee;
+        }
+        #search{
+            width: 198px;
+            height: 32px;
+            size: 15;
+            border-radius: 4px;
+            margin: 10px 6px 0 10px;
+            border: 1px #333333 solid;
+            
+        }
+        .biaoti{
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 800;
+            margin-top: 8px;
+            margin-left: 16px;
+        }
+        ul{
+            font-size: 14px;
+            color: #999;
+            list-style:none;
+            line-height: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="top"><!--top-->
+        <img src="xxx" alt="logo" class="logo">
+        
+        <div class="top-right"><div class="nav"><a href="#" class="now">总体业务分析总览</a><a href="/Volumes/公用盘/航天科工/前端学习/frontend/2.html" class="the-2">各业务分析总览</a><a href="">全景画像</a><a href="">数据检索</a></div><img src="" alt="头像" id="pic" ><span>名字</span><img src="" alt="hangtlogo" id="logo-hangt"></div>
+    </div>
+
+    <div class="left">
+        <input type="search" id="search" name="search" placeholder="请输入关键词"><input type="button" value="+">
+        <br/>
+        <div class="biaoti"><img src="" alt="icon">专题详情</div>
+        <div class="list">
+            <ul>
+                <li>罪名趋势变化情况分析</li>
+                <li>设计恐怖分子活动</li>
+                <li>职务犯罪情况分析</li>
+                <li>罪名趋势变化情况分析</li>
+                <li>设计恐怖分子活动</li>
+                <li>职务犯罪情况分析</li>
+                <li>罪名趋势变化情况分析</li>
+                <li>设计恐怖分子活动</li>
+                <li>职务犯罪情况分析</li>
+            </ul>
+        </div>
+        <div class="biaoti"><img src="" alt="icon">质量分析</div>
+    </div><!--left-->
+    <div></div><!--content-->
+</body>
+</html>

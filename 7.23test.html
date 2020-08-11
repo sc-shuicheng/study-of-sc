@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 我的测试题</title>
+    <!--设置文字颜色-->
+    <style>
+        #red{
+            color: red;
+            
+        }
+        .black{
+            color: black;
+        }
+    </style>
+    <!--点击提交后的显示内容-->
+    <script type="text/javascript">
+        function checkSub(){
+        var name = document.getElementById("name").value;//声明name的值是输入的name值
+        var sex = document.getElementById("sex").value;
+        var showContent = " my name is  " + name + "." + " my femal is  " + sex + "\n";//声明showContent的值的构成
+        alert(showContent);//显示括号内的值带确认按钮
+        }
+        
+        //-->
+        </script>
+</head>
+<body>
+    <h1 style="text-align: center;">我的测试题</h1>
+    <ul id="red"><!--无序标签-->
+        <li>在什么标签里面添加css属性</li>
+        <li>语义化标签是什么？有什么作用</li>
+        <li>img属于行内替换元素。<span class="black">height/width/padding/margin</span>均可用。效果等于块元素
+            <br />
+            行内非替换元素，例如，<span class="black">height/width/padding top、bottom/margin top、bottom</span>均无效果，只能用<span class="black">padding left、right和padding left、right</span>改变宽度。
+        </li>
+    </ul>
+    <form id="form1" name="main" method="post" id="main"  onsubmit="return checkSub();">
+        姓名：
+        <br />
+        <input type="text" name="name" id="name">
+        <br />
+        性别：
+        <br />
+        <input type="text" name="sex" id="sex">
+        <br />
+        <button>submit</button>
+        <!--<input type="submit">-->
+    </form>
+</body>
+</html>
